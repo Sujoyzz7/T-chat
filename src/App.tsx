@@ -4,6 +4,7 @@ import { ChatProvider } from './contexts/ChatContext';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { AuthPage } from './components/auth/AuthPage';
 import { ChatDashboard } from './components/dashboard/ChatDashboard';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const AppContent: React.FC = () => {
     const { user, loading } = useAuth();
@@ -41,3 +42,4 @@ function App() {
 }
 
 export default App;
+
